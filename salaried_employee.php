@@ -14,6 +14,11 @@
 			$this->duration = $duration;
 		}
 
+
+
+
+		
+
 	}
 
 
