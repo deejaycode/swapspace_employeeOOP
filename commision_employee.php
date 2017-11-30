@@ -10,7 +10,7 @@
 			private $perc;
 
 
-		public function __construct($name, $designation, $amountPaid, $duration, $sales, $perc){
+		public function __construct($name, $designation, $duration, $sales, $perc){
 
 			$this->name = $name;
 			$this->designation = $designation;
@@ -24,7 +24,7 @@
 
 		
 		
-		public function salesPercentageCommission($amountPaid){
+		public function salesPercentageCommission(){
 
 
 			 

@@ -7,6 +7,7 @@
 	{
 		
 		private static $_expectedWorkHours = 40;
+		private static $_hourlyRate = 50;
 
 		public function __construct($name, $designation, $duration/*, $overtime*/){
 

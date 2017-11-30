@@ -4,7 +4,7 @@
 	interface iPercentage
 
 	{
-		function salesPercentageCommission($amout);
+		function salesPercentageCommission();
 
 	}
 

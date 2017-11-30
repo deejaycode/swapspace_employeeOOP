@@ -9,7 +9,7 @@
 		protected $designation;
 		//protected $amountPaid;
 		protected $duration;
-		protected static  $_hourlyRate = 50;
+		
 
 		function getName(){
 

@@ -17,7 +17,7 @@
 
 
 
-		public function salesPercentageCommission($amountPaid){
+		public function salesPercentageCommission(){
 
 			$result = (10/100) * $amountPaid;
 
@@ -30,7 +30,7 @@
 
 		public function calculateBaseSalary(){
 
-
+			
 
 			
 		}
