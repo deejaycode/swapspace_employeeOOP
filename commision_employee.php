@@ -12,10 +12,9 @@
 
 		public function __construct($name, $designation, $duration, $sales, $perc){
 
-			$this->name = $name;
-			$this->designation = $designation;
-			/*$this->amountPaid = $amountPaid;*/
-			$this->duration = $duration;
+			$this->_name = $name;
+			$this->_designation = $designation;
+			$this->_type = "Commission Employee";
 			$this->sales = $sales;
 			$this->perc = $perc;
 
@@ -32,14 +31,27 @@
 
 		public function calculateBaseSalary(){
 
-			$totalPay = 0;
+			$salary = 0;
 
-			$totalPay = ($this->_hourlyRate * $this->duration) + $comm;
+			$salary= ($this->_hourlyRate * $this->duration) + $comm;
 
-			return $totalPay;
+			return $salary;
 
 
 		}
+
+		public function getDetails(){
+
+			echo "<ul>";
+			echo "<li>Name : ".$this->getName()."</li>";
+			echo "<li>Designation: ".$this->getDesignation()."</li>";
+			echo "<li>Type: ".$this->getType()."</li>";
+			echo "<li>Overtime: ".$this->getSalary()."</li>";			
+			echo "</ul>";
+
+
+		}
+
 
 	}
 

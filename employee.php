@@ -5,47 +5,62 @@
 	abstract class Employee {
 
 
-		protected $name;
-		protected $designation;
-		//protected $amountPaid;
-		protected $duration;
+		protected $_name;
+		protected $_designation;
+		protected $_salary;
+		protected $type;
 		
+
+
+		public function __construct( $name, $designation, $salary){
+				
+				/*$this->_type = $type;*/
+				$this->_name = $name;
+				$this->_designation = $designation;
+				$this->_salary = $salary;
+				
+
+			}
 
 		function getName(){
 
-			return $this->name;
+			return $this->_name;
 
 		}
 
 		function setName($name){
 
-			$this->name = $name;
+			$this->_name = $name;
 		}
 
 
 		function getDesignation(){
 
-			return $this->designation;
+			return $this->_designation;
 
 		}
 
 		function setDesignation($designation){
 
-			$this->designation = $designation;
+			$this->_designation = $designation;
 		}
 
 
 
-		function getDuration(){
+		function getSalary(){
 
-			return $this->duration;
+			return $this->_salary;
 		}
 
-		function setDuration($duration){
+		function setSalary($salary){
 
-			$this->duration = $duration;
+			$this->_salary = $salary;
 		}
 
+		function getType() {
+
+				return $this->_type;
+		} 
 		
 			//program to an interface not an implementation
 		abstract public function calculateBaseSalary(); 

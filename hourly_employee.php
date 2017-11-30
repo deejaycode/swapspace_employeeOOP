@@ -8,13 +8,14 @@
 		
 		private static $_expectedWorkHours = 40;
 		private static $_hourlyRate = 50;
+		private $duration;
 
 		public function __construct($name, $designation, $duration/*, $overtime*/){
 
-			$this->name = $name;
-			$this->designation = $designation;
-			$this->duration = $duration;
-			//$this->overtime = $overtime;
+			$this->_name = $name;
+			$this->_designation = $designation;
+			$this->_type = "Hourly Employee";
+			
 
 		}
 	
@@ -27,7 +28,7 @@
 
 		public function calculateBaseSalary() {
 
-			$totalPay = 0;
+			$salary = 0;
 			$overtime = 0;
 
 			if($this->duration > $this->_expectedWorkHours){
@@ -35,9 +36,22 @@
 			}
 
 
-			$totalPay = ($this->_hourlyRate * $this->duration) + $overtime;
+			$salary = ($this->_hourlyRate * $this->duration) + $overtime;
 
-			return $totalPay;
+			return $salary;
+		}
+
+			public function getDetails(){
+
+			echo "<ul>";
+			echo "<li>Name : ".$this->getName()."</li>";
+			echo "<li>Designation: ".$this->getDesignation()."</li>";
+			echo "<li>Type: ".$this->getType()."</li>";
+			echo "<li>Overtime: ".$this->getSalary()."</li>";			
+			echo "</ul>";
+
+
+
 		}
 
 
