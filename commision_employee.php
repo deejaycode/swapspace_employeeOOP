@@ -14,19 +14,17 @@
 
 			$this->name = $name;
 			$this->designation = $designation;
-			$this->amountPaid = $amountPaid;
+			/*$this->amountPaid = $amountPaid;*/
 			$this->duration = $duration;
 			$this->sales = $sales;
 			$this->perc = $perc;
 
 		}
-
-
-		
+	
 		
 		public function salesPercentageCommission(){
 
-
+			return $comm = ($sales * ($perc/100));
 			 
 
 			
@@ -36,24 +34,13 @@
 
 			$totalPay = 0;
 
-			$totalPay = ($this->_hourlyRate * $this->duration);
+			$totalPay = ($this->_hourlyRate * $this->duration) + $comm;
 
 			return $totalPay;
 
 
-			
 		}
 
-
-
-
-
-
 	}
-
-
-
-
-
 
 ?>
