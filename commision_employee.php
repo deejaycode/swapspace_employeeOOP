@@ -34,6 +34,11 @@
 
 		public function calculateBaseSalary(){
 
+			$totalPay = 0;
+
+			$totalPay = ($this->_hourlyRate * $this->duration);
+
+			return $totalPay;
 
 
 			

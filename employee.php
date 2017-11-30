@@ -2,13 +2,14 @@
 
 
 	
-	class Employee {
+	abstract class Employee {
 
 
 		protected $name;
 		protected $designation;
-		protected $amountPaid;
+		//protected $amountPaid;
 		protected $duration;
+		protected static  $_hourlyRate = 50;
 
 		function getName(){
 
@@ -34,18 +35,6 @@
 		}
 
 
-
-
-		function getAmountPaid(){
-
-			return $this->amountPaid;
-
-		}
-
-		function setAmountPaid($amountPaid){
-
-			$this->amountPaid = $amountPaid;
-		}
 
 		function getDuration(){
 

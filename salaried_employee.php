@@ -6,14 +6,24 @@
 
 	{
 
-		public function __construct($name, $designation, $amountPaid,$duration){
+		public function __construct($name, $designation, $duration){
 
 			$this->name = $name;
 			$this->designation = $designation;
-			$this->amountPaid = $amountPaid;
 			$this->duration = $duration;
 		}
 
+
+
+		public function calculateBaseSalary(){
+
+			$totalPay = 0;
+
+			return $totalPay = $this->_hourlyRate * $this->duration;
+
+
+
+		} 
 
 
 

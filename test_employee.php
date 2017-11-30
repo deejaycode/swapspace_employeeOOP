@@ -10,7 +10,7 @@
 
 
 
-	$sal_employee = new Salaried_Employee("Bosun","MD",400,"weekly");
+	$sal_employee = new Salaried_Employee("Bosun","MD",40);
 
 
 	$person = $sal_employee->getName();
