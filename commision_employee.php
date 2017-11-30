@@ -23,17 +23,7 @@
 
 
 		
-		/*public function calculateNewAmount($sales, $perc){
-
-			//$result in amount
-
-			$amountPaid = ($perc * $sales);
-
-			return $amountPaid;
-
-
-		}*/
-
+		
 		public function salesPercentageCommission($amountPaid){
 
 
@@ -41,6 +31,16 @@
 
 			
 		}
+
+		public function calculateBaseSalary(){
+
+
+
+			
+		}
+
+
+
 
 
 
